@@ -1,0 +1,48 @@
+;
+;	PIO test
+;
+
+.program pio_test
+.wrap_target
+	mov		osr, pins			; OSR = { GPIO26, ... ,GPIO0,GPIO31,GPIO30,GPIO29,GPIO28,GPIO27 }
+	out		isr, 1				; ISR = { 0,0,0, ... ,0,GPIO27 }
+	out		Y, 1				; Y = { 0,0,0, ... ,0,GPIO28 }
+
+	pull	noblock				; OSR = (TX FIFO is empty) ? X : TX FIFO
+	mov		X, osr				; X = OSR    ※ OSR の値を X にバックアップしておく
+	jmp		!Y  out_skip_bit1	; if Y==0 goto out_skip_bit1
+	out		NULL, 16
+out_skip_bit1:
+	mov		Y, isr
+	jmp		!Y  out_skip_bit0	; if Y==0 goto out_skip_bit0
+	out		NULL, 8
+out_skip_bit0:
+	out		pins, 8
+.wrap
+
+% c-sdk {
+static inline void pio_test_program_init( PIO pio, uint sm, uint offset ) {
+	int i;
+	pio_sm_config c = pio_test_program_get_default_config( offset );
+
+	// OUT, INピングループのマッピング
+	sm_config_set_out_pins( &c, 0, 8 );
+	sm_config_set_in_pins( &c, 27 );
+	// このピンのGPIO機能を設定する（パッドにPIOを接続する）。
+	for( i = 0; i < 8; i++ ) {
+		pio_gpio_init( pio, i );
+	}
+	pio_gpio_init( pio, 27 );
+	pio_gpio_init( pio, 28 );
+	// PIOで GPIO0～7ピンの方向を出力に設定する。
+	pio_sm_set_consecutive_pindirs( pio, sm, 0, 8, true );
+	// PIOで GPIO27～28ピンの方向を入力に設定する。
+	pio_sm_set_consecutive_pindirs( pio, sm, 27, 2, false );
+	// コンフィギュレーションをロードし、プログラムのスタート地点にジャンプします。
+	pio_sm_init( pio, sm, offset, &c );
+	// バンクレジスタの初期値を書き込む
+	pio_sm_put_blocking( pio, sm, 0x01000302 );
+	// ステートマシンの実行を設定する。
+	pio_sm_set_enabled( pio, sm, true );
+}
+%}

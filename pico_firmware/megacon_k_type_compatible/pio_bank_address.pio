@@ -1,0 +1,57 @@
+;
+; PIO MSX MegaROM Controller (K Type) : Bank Address
+; Copyright (c) 2022 HRA!
+; 
+; Permission is hereby granted, free of charge, to any person obtaining a copy
+; of this software and associated documentation files (the "Software"), to deal
+; in the Software without restriction, including without limitation the rights
+; to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+; copies of the Software, and to permit persons to whom the Software is
+; furnished to do so, subject to the following conditions:
+; 
+; The above copyright notice and this permission notice shall be included in all
+; copies or substantial portions of the Software.
+; 
+; THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+; IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+; FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+; AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+; LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+; OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+; SOFTWARE.
+
+.program pio_bank_address
+.wrap_target
+	wait 0 gpio 22				; /SLTSEL=0 を待つ
+	mov		osr, pins			; OSR = { GPIO16, ... ,GPIO0,GPIO31, ... ,GPIO18,GPIO17 }
+	out		isr, 1				; ISR = { 0,0,0, ... ,0,GPIO17 }
+	out		Y, 1				; Y = { 0,0,0, ... ,0,GPIO18 }
+
+	pull	noblock				; OSR = (TX FIFO is empty) ? X : TX FIFO
+	mov		X, osr				; X = OSR	 ※ OSR の値を X にバックアップしておく
+	jmp		!Y	out_skip_bit1	; if Y==0 goto out_skip_bit1
+	out		NULL, 16
+out_skip_bit1:
+	mov		Y, isr
+	jmp		!Y	out_skip_bit0	; if Y==0 goto out_skip_bit0
+	out		NULL, 8
+out_skip_bit0:
+	out		pins, 8
+	wait 1 gpio 22				; /SLTSEL=1 を待つ
+.wrap
+
+% c-sdk {
+static inline void pio_bank_address_program_init( PIO pio, uint sm, uint offset, uint32_t bank_register ) {
+	pio_sm_config c = pio_bank_address_program_get_default_config( offset );
+
+	// OUT, INピングループのマッピング
+	sm_config_set_out_pins( &c, 0, 8 );		//	MA13-MA20 を GPIO0-GPIO7 の 8pin で出す。
+	sm_config_set_in_pins( &c, 17 );		//	A13-A14 を GPIO17-GPIO18 の 2pin で受ける。
+	// コンフィギュレーションをロードし、プログラムのスタート地点にジャンプします。
+	pio_sm_init( pio, sm, offset, &c );
+	// バンクレジスタの初期値を書き込む
+	pio_sm_put_blocking( pio, sm, bank_register );
+	// ステートマシンの実行を設定する。
+	pio_sm_set_enabled( pio, sm, true );
+}
+%}

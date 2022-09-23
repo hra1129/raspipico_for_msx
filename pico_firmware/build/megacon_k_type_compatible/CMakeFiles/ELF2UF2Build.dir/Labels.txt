@@ -1,0 +1,13 @@
+# Target labels
+ ELF2UF2Build
+# Source files and their labels
+C:/Users/hra/Documents/github/raspipico_for_msx/pico_firmware/build/megacon_k_type_compatible/CMakeFiles/ELF2UF2Build
+C:/Users/hra/Documents/github/raspipico_for_msx/pico_firmware/build/megacon_k_type_compatible/CMakeFiles/ELF2UF2Build.rule
+C:/Users/hra/Documents/github/raspipico_for_msx/pico_firmware/build/megacon_k_type_compatible/CMakeFiles/ELF2UF2Build-complete.rule
+C:/Users/hra/Documents/github/raspipico_for_msx/pico_firmware/build/megacon_k_type_compatible/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-build.rule
+C:/Users/hra/Documents/github/raspipico_for_msx/pico_firmware/build/megacon_k_type_compatible/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-configure.rule
+C:/Users/hra/Documents/github/raspipico_for_msx/pico_firmware/build/megacon_k_type_compatible/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-download.rule
+C:/Users/hra/Documents/github/raspipico_for_msx/pico_firmware/build/megacon_k_type_compatible/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-install.rule
+C:/Users/hra/Documents/github/raspipico_for_msx/pico_firmware/build/megacon_k_type_compatible/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-mkdir.rule
+C:/Users/hra/Documents/github/raspipico_for_msx/pico_firmware/build/megacon_k_type_compatible/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-patch.rule
+C:/Users/hra/Documents/github/raspipico_for_msx/pico_firmware/build/megacon_k_type_compatible/elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-update.rule

@@ -1,0 +1,10 @@
+このコードは、まだ十分なテストを行えていません。
+現段階で使ってみる方は、MSX実機に取り付ける前に、十分な検証を行ってからご利用下さい。
+このコードによって、なんらかの問題・故障などが発生しても、
+HRA! (t.hara) は一切責任を負いませんのでご注意下さい。
+
+This code has not yet been fully tested.
+If you intend to use this code at this stage, 
+please verify it thoroughly before installing it in an actual MSX machine.
+If any problems or malfunctions occur due to this code, 
+please contact HRA! (t.hara) assumes no responsibility for any problems or malfunctions caused by this code.

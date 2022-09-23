@@ -1,0 +1,75 @@
+The system is: Windows - 10.0.22000 - AMD64
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler: C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.29.30133/bin/Hostx86/x86/cl.exe 
+Build flags: 
+Id flags:  
+
+The output was:
+0
+Microsoft(R) C/C++ Optimizing Compiler Version 19.29.30146 for x86
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+CMakeCCompilerId.c
+Microsoft (R) Incremental Linker Version 14.29.30146.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+/out:CMakeCCompilerId.exe 
+CMakeCCompilerId.obj 
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CMakeCCompilerId.exe"
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CMakeCCompilerId.obj"
+
+The C compiler identification is MSVC, found in "C:/Users/hra/Documents/github/raspipico_for_msx/pico_firmware/build/elf2uf2/CMakeFiles/3.20.1/CompilerIdC/CMakeCCompilerId.exe"
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+Compiler: C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.29.30133/bin/Hostx86/x86/cl.exe 
+Build flags: 
+Id flags:  
+
+The output was:
+0
+Microsoft(R) C/C++ Optimizing Compiler Version 19.29.30146 for x86
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+CMakeCXXCompilerId.cpp
+Microsoft (R) Incremental Linker Version 14.29.30146.0
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+/out:CMakeCXXCompilerId.exe 
+CMakeCXXCompilerId.obj 
+
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CMakeCXXCompilerId.exe"
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CMakeCXXCompilerId.obj"
+
+The CXX compiler identification is MSVC, found in "C:/Users/hra/Documents/github/raspipico_for_msx/pico_firmware/build/elf2uf2/CMakeFiles/3.20.1/CompilerIdCXX/CMakeCXXCompilerId.exe"
+
+Detecting C compiler ABI info compiled with the following output:
+Change Dir: C:/Users/hra/Documents/github/raspipico_for_msx/pico_firmware/build/elf2uf2/CMakeFiles/CMakeTmp
+
+Run Build Command(s):nmake -f Makefile /nologo cmTC_7695b\fast && 	"C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\bin\HostX86\x86\nmake.exe"  -f CMakeFiles\cmTC_7695b.dir\build.make /nologo -L                  CMakeFiles\cmTC_7695b.dir\build
+Building C object CMakeFiles/cmTC_7695b.dir/CMakeCCompilerABI.c.obj
+	"C:\Program Files\CMake\bin\cmake.exe" -E cmake_cl_compile_depends --dep-file=CMakeFiles\cmTC_7695b.dir\CMakeCCompilerABI.c.obj.d --working-dir=C:\Users\hra\Documents\github\raspipico_for_msx\pico_firmware\build\elf2uf2\CMakeFiles\CMakeTmp --filter-prefix="メモ: インクルード ファイル:  " -- C:\PROGRA~2\MIB055~1\2019\COMMUN~1\VC\Tools\MSVC\14.29.30133\bin\Hostx86\x86\cl.exe @C:\Users\hra\AppData\Local\Temp\nm2AA.tmp
+CMakeCCompilerABI.c
+繝ｻ・懊・ 繧､繝ｳ繧ｯ繝ｫ繝ｼ繝・繝輔ぃ繧､繝ｫ:  C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCompilerABI.h
+Linking C executable cmTC_7695b.exe
+	"C:\Program Files\CMake\bin\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\cmTC_7695b.dir --rc=C:\PROGRA~2\WI3CF2~1\10\bin\100177~1.0\x86\rc.exe --mt=C:\PROGRA~2\WI3CF2~1\10\bin\100177~1.0\x86\mt.exe --manifests -- C:\PROGRA~2\MIB055~1\2019\COMMUN~1\VC\Tools\MSVC\14.29.30133\bin\Hostx86\x86\link.exe /nologo @CMakeFiles\cmTC_7695b.dir\objects1.rsp @C:\Users\hra\AppData\Local\Temp\nm347.tmp
+
+
+
+Detecting CXX compiler ABI info compiled with the following output:
+Change Dir: C:/Users/hra/Documents/github/raspipico_for_msx/pico_firmware/build/elf2uf2/CMakeFiles/CMakeTmp
+
+Run Build Command(s):nmake -f Makefile /nologo cmTC_f3277\fast && 	"C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\bin\HostX86\x86\nmake.exe"  -f CMakeFiles\cmTC_f3277.dir\build.make /nologo -L                  CMakeFiles\cmTC_f3277.dir\build
+Building CXX object CMakeFiles/cmTC_f3277.dir/CMakeCXXCompilerABI.cpp.obj
+	"C:\Program Files\CMake\bin\cmake.exe" -E cmake_cl_compile_depends --dep-file=CMakeFiles\cmTC_f3277.dir\CMakeCXXCompilerABI.cpp.obj.d --working-dir=C:\Users\hra\Documents\github\raspipico_for_msx\pico_firmware\build\elf2uf2\CMakeFiles\CMakeTmp --filter-prefix="メモ: インクルード ファイル:  " -- C:\PROGRA~2\MIB055~1\2019\COMMUN~1\VC\Tools\MSVC\14.29.30133\bin\Hostx86\x86\cl.exe @C:\Users\hra\AppData\Local\Temp\nm73D.tmp
+CMakeCXXCompilerABI.cpp
+繝ｻ・懊・ 繧､繝ｳ繧ｯ繝ｫ繝ｼ繝・繝輔ぃ繧､繝ｫ:  C:\Program Files\CMake\share\cmake-3.20\Modules\CMakeCompilerABI.h
+Linking CXX executable cmTC_f3277.exe
+	"C:\Program Files\CMake\bin\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\cmTC_f3277.dir --rc=C:\PROGRA~2\WI3CF2~1\10\bin\100177~1.0\x86\rc.exe --mt=C:\PROGRA~2\WI3CF2~1\10\bin\100177~1.0\x86\mt.exe --manifests -- C:\PROGRA~2\MIB055~1\2019\COMMUN~1\VC\Tools\MSVC\14.29.30133\bin\Hostx86\x86\link.exe /nologo @CMakeFiles\cmTC_f3277.dir\objects1.rsp @C:\Users\hra\AppData\Local\Temp\nm80A.tmp
+
+
+
