@@ -18,7 +18,7 @@
 static const uint16_t pio_bank_write_program_instructions[] = {
             //     .wrap_target
     0x2016, //  0: wait   0 gpio, 22                 
-    0xa007, //  1: mov    pins, osr                  
+    0xa0e0, //  1: mov    osr, pins                  
     0x60cc, //  2: out    isr, 12                    
     0x6021, //  3: out    x, 1                       
     0x0026, //  4: jmp    !x, 6                      

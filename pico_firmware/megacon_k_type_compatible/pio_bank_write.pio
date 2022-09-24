@@ -25,7 +25,7 @@
 .wrap_target
 wait_sltsel0:
 	wait 0 gpio 22		; /SLTSEL=0 ‚ð‘Ò‹@‚·‚é
-	mov	 pins, osr		; OSR = { GPIO7, ... ,GPIO10,GPIO9,GPIO8 }
+	mov	 osr, pins		; OSR = { GPIO7, ... ,GPIO10,GPIO9,GPIO8 }
 	out	 isr,12			; ISR = {GPIO19,...,GPIO8}  (A15-A12,D7-D0)
 	out	 X,1			; X = GPIO20	(/WR)
 	jmp	 !X wr_active
