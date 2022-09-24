@@ -123,6 +123,7 @@ int main( void ) {
 		gpio_put( sltsel, 1 );
 		sleep_us(1);
 		address = (address + 1) & 15;
+		data = (data + 1) & 255;
 	}
 	return 0;
 }

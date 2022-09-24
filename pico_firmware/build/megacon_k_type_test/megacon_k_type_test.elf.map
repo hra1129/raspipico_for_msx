@@ -1035,9 +1035,9 @@ Discarded input sections
  .comment       0x00000000       0x4e CMakeFiles/megacon_k_type_test.dir/C_/Users/hra/Documents/github/sangria_firmware/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
  .ARM.attributes
                 0x00000000       0x2c CMakeFiles/megacon_k_type_test.dir/C_/Users/hra/Documents/github/sangria_firmware/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
- .text          0x00000000        0x0 C:\Users\hra\AppData\Local\Temp\ccEYYS7N.o
- .data          0x00000000        0x0 C:\Users\hra\AppData\Local\Temp\ccEYYS7N.o
- .bss           0x00000000        0x0 C:\Users\hra\AppData\Local\Temp\ccEYYS7N.o
+ .text          0x00000000        0x0 C:\Users\hra\AppData\Local\Temp\cc02mSmk.o
+ .data          0x00000000        0x0 C:\Users\hra\AppData\Local\Temp\cc02mSmk.o
+ .bss           0x00000000        0x0 C:\Users\hra\AppData\Local\Temp\cc02mSmk.o
  .data          0x00000000        0x0 c:/progra~2/gnu arm embedded toolchain/10 2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/thumb/v6-m/nofp\libgcc.a(_dvmd_tls.o)
  .bss           0x00000000        0x0 c:/progra~2/gnu arm embedded toolchain/10 2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/thumb/v6-m/nofp\libgcc.a(_dvmd_tls.o)
  .text          0x00000000        0x0 c:/progra~2/gnu arm embedded toolchain/10 2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libc.a(lib_a-calloc.o)
@@ -1246,11 +1246,11 @@ LOAD c:/progra~2/gnu arm embedded toolchain/10 2020-q4-major/bin/../lib/gcc/arm-
 .boot2          0x10000000      0x100
                 0x10000000                __boot2_start__ = .
  *(.boot2)
- .boot2         0x10000000      0x100 C:\Users\hra\AppData\Local\Temp\ccEYYS7N.o
+ .boot2         0x10000000      0x100 C:\Users\hra\AppData\Local\Temp\cc02mSmk.o
                 0x10000100                __boot2_end__ = .
                 0x00000001                ASSERT (((__boot2_end__ - __boot2_start__) == 0x100), ERROR: Pico second stage bootloader must be 256 bytes in size)
 
-.text           0x10000100     0x1d98
+.text           0x10000100     0x1db8
                 0x10000100                __logical_binary_start = .
  *(.vectors)
  .vectors       0x10000100       0xd4 CMakeFiles/megacon_k_type_test.dir/C_/Users/hra/Documents/github/sangria_firmware/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
@@ -1313,186 +1313,187 @@ LOAD c:/progra~2/gnu arm embedded toolchain/10 2020-q4-major/bin/../lib/gcc/arm-
  *(EXCLUDE_FILE(*libm.a: *libc.a:*lib_a-mem*.o *libgcc.a:) .text*)
  .text          0x100002c4       0x48 c:/progra~2/gnu arm embedded toolchain/10 2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/thumb/v6-m/nofp/crtbegin.o
  .text.startup.main
-                0x1000030c      0x118 CMakeFiles/megacon_k_type_test.dir/main.cpp.obj
+                0x1000030c      0x134 CMakeFiles/megacon_k_type_test.dir/main.cpp.obj
                 0x1000030c                main
  .text.gpio_init
-                0x10000424       0x3c CMakeFiles/megacon_k_type_test.dir/C_/Users/hra/Documents/github/sangria_firmware/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
-                0x10000424                gpio_init
+                0x10000440       0x3c CMakeFiles/megacon_k_type_test.dir/C_/Users/hra/Documents/github/sangria_firmware/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
+                0x10000440                gpio_init
  .text.hw_claim_or_assert
-                0x10000460       0x44 CMakeFiles/megacon_k_type_test.dir/C_/Users/hra/Documents/github/sangria_firmware/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
-                0x10000460                hw_claim_or_assert
+                0x1000047c       0x44 CMakeFiles/megacon_k_type_test.dir/C_/Users/hra/Documents/github/sangria_firmware/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
+                0x1000047c                hw_claim_or_assert
  .text.running_on_fpga
-                0x100004a4       0x10 CMakeFiles/megacon_k_type_test.dir/C_/Users/hra/Documents/github/sangria_firmware/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
-                0x100004a4                running_on_fpga
+                0x100004c0       0x10 CMakeFiles/megacon_k_type_test.dir/C_/Users/hra/Documents/github/sangria_firmware/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
+                0x100004c0                running_on_fpga
  .text.spin_locks_reset
-                0x100004b4       0x1c CMakeFiles/megacon_k_type_test.dir/C_/Users/hra/Documents/github/sangria_firmware/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
-                0x100004b4                spin_locks_reset
+                0x100004d0       0x1c CMakeFiles/megacon_k_type_test.dir/C_/Users/hra/Documents/github/sangria_firmware/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
+                0x100004d0                spin_locks_reset
  .text.next_striped_spin_lock_num
-                0x100004d0       0x18 CMakeFiles/megacon_k_type_test.dir/C_/Users/hra/Documents/github/sangria_firmware/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
-                0x100004d0                next_striped_spin_lock_num
+                0x100004ec       0x18 CMakeFiles/megacon_k_type_test.dir/C_/Users/hra/Documents/github/sangria_firmware/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
+                0x100004ec                next_striped_spin_lock_num
  .text.irq_set_enabled
-                0x100004e8       0x24 CMakeFiles/megacon_k_type_test.dir/C_/Users/hra/Documents/github/sangria_firmware/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
-                0x100004e8                irq_set_enabled
+                0x10000504       0x24 CMakeFiles/megacon_k_type_test.dir/C_/Users/hra/Documents/github/sangria_firmware/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x10000504                irq_set_enabled
  .text.irq_get_vtable_handler
-                0x1000050c       0x10 CMakeFiles/megacon_k_type_test.dir/C_/Users/hra/Documents/github/sangria_firmware/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
-                0x1000050c                irq_get_vtable_handler
+                0x10000528       0x10 CMakeFiles/megacon_k_type_test.dir/C_/Users/hra/Documents/github/sangria_firmware/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x10000528                irq_get_vtable_handler
  .text.irq_set_exclusive_handler
-                0x1000051c       0x54 CMakeFiles/megacon_k_type_test.dir/C_/Users/hra/Documents/github/sangria_firmware/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
-                0x1000051c                irq_set_exclusive_handler
+                0x10000538       0x54 CMakeFiles/megacon_k_type_test.dir/C_/Users/hra/Documents/github/sangria_firmware/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x10000538                irq_set_exclusive_handler
  .text.irq_remove_handler
-                0x10000570      0x1b4 CMakeFiles/megacon_k_type_test.dir/C_/Users/hra/Documents/github/sangria_firmware/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
-                0x10000570                irq_remove_handler
+                0x1000058c      0x1b4 CMakeFiles/megacon_k_type_test.dir/C_/Users/hra/Documents/github/sangria_firmware/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x1000058c                irq_remove_handler
  .text.irq_add_tail_to_free_list
-                0x10000724       0xb4 CMakeFiles/megacon_k_type_test.dir/C_/Users/hra/Documents/github/sangria_firmware/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
-                0x10000724                irq_add_tail_to_free_list
+                0x10000740       0xb4 CMakeFiles/megacon_k_type_test.dir/C_/Users/hra/Documents/github/sangria_firmware/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x10000740                irq_add_tail_to_free_list
  .text.irq_init_priorities
-                0x100007d8       0x24 CMakeFiles/megacon_k_type_test.dir/C_/Users/hra/Documents/github/sangria_firmware/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
-                0x100007d8                irq_init_priorities
+                0x100007f4       0x24 CMakeFiles/megacon_k_type_test.dir/C_/Users/hra/Documents/github/sangria_firmware/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x100007f4                irq_init_priorities
  .text.lock_init
-                0x100007fc       0x10 CMakeFiles/megacon_k_type_test.dir/C_/Users/hra/Documents/github/sangria_firmware/pico-sdk/src/common/pico_sync/lock_core.c.obj
-                0x100007fc                lock_init
+                0x10000818       0x10 CMakeFiles/megacon_k_type_test.dir/C_/Users/hra/Documents/github/sangria_firmware/pico-sdk/src/common/pico_sync/lock_core.c.obj
+                0x10000818                lock_init
  .text.timer_pool_entry_comparator
-                0x1000080c       0x34 CMakeFiles/megacon_k_type_test.dir/C_/Users/hra/Documents/github/sangria_firmware/pico-sdk/src/common/pico_time/time.c.obj
-                0x1000080c                timer_pool_entry_comparator
+                0x10000828       0x34 CMakeFiles/megacon_k_type_test.dir/C_/Users/hra/Documents/github/sangria_firmware/pico-sdk/src/common/pico_time/time.c.obj
+                0x10000828                timer_pool_entry_comparator
  .text.sleep_until_callback
-                0x10000840       0x30 CMakeFiles/megacon_k_type_test.dir/C_/Users/hra/Documents/github/sangria_firmware/pico-sdk/src/common/pico_time/time.c.obj
+                0x1000085c       0x30 CMakeFiles/megacon_k_type_test.dir/C_/Users/hra/Documents/github/sangria_firmware/pico-sdk/src/common/pico_time/time.c.obj
  .text.add_alarm_under_lock.isra.0
-                0x10000870      0x100 CMakeFiles/megacon_k_type_test.dir/C_/Users/hra/Documents/github/sangria_firmware/pico-sdk/src/common/pico_time/time.c.obj
+                0x1000088c      0x100 CMakeFiles/megacon_k_type_test.dir/C_/Users/hra/Documents/github/sangria_firmware/pico-sdk/src/common/pico_time/time.c.obj
  .text.alarm_pool_alarm_callback
-                0x10000970      0x1c8 CMakeFiles/megacon_k_type_test.dir/C_/Users/hra/Documents/github/sangria_firmware/pico-sdk/src/common/pico_time/time.c.obj
+                0x1000098c      0x1c8 CMakeFiles/megacon_k_type_test.dir/C_/Users/hra/Documents/github/sangria_firmware/pico-sdk/src/common/pico_time/time.c.obj
  .text.alarm_pool_add_alarm_at.constprop.0
-                0x10000b38      0x11c CMakeFiles/megacon_k_type_test.dir/C_/Users/hra/Documents/github/sangria_firmware/pico-sdk/src/common/pico_time/time.c.obj
+                0x10000b54      0x11c CMakeFiles/megacon_k_type_test.dir/C_/Users/hra/Documents/github/sangria_firmware/pico-sdk/src/common/pico_time/time.c.obj
  .text.alarm_pool_init_default
-                0x10000c54       0x64 CMakeFiles/megacon_k_type_test.dir/C_/Users/hra/Documents/github/sangria_firmware/pico-sdk/src/common/pico_time/time.c.obj
-                0x10000c54                alarm_pool_init_default
+                0x10000c70       0x64 CMakeFiles/megacon_k_type_test.dir/C_/Users/hra/Documents/github/sangria_firmware/pico-sdk/src/common/pico_time/time.c.obj
+                0x10000c70                alarm_pool_init_default
  .text.sleep_until
-                0x10000cb8       0xac CMakeFiles/megacon_k_type_test.dir/C_/Users/hra/Documents/github/sangria_firmware/pico-sdk/src/common/pico_time/time.c.obj
-                0x10000cb8                sleep_until
+                0x10000cd4       0xac CMakeFiles/megacon_k_type_test.dir/C_/Users/hra/Documents/github/sangria_firmware/pico-sdk/src/common/pico_time/time.c.obj
+                0x10000cd4                sleep_until
  .text.sleep_us
-                0x10000d64       0x30 CMakeFiles/megacon_k_type_test.dir/C_/Users/hra/Documents/github/sangria_firmware/pico-sdk/src/common/pico_time/time.c.obj
-                0x10000d64                sleep_us
+                0x10000d80       0x30 CMakeFiles/megacon_k_type_test.dir/C_/Users/hra/Documents/github/sangria_firmware/pico-sdk/src/common/pico_time/time.c.obj
+                0x10000d80                sleep_us
  .text.hardware_alarm_irq_handler
-                0x10000d94       0xb8 CMakeFiles/megacon_k_type_test.dir/C_/Users/hra/Documents/github/sangria_firmware/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x10000db0       0xb8 CMakeFiles/megacon_k_type_test.dir/C_/Users/hra/Documents/github/sangria_firmware/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
  .text.hardware_alarm_claim
-                0x10000e4c       0x18 CMakeFiles/megacon_k_type_test.dir/C_/Users/hra/Documents/github/sangria_firmware/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
-                0x10000e4c                hardware_alarm_claim
+                0x10000e68       0x18 CMakeFiles/megacon_k_type_test.dir/C_/Users/hra/Documents/github/sangria_firmware/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x10000e68                hardware_alarm_claim
  .text.time_us_64
-                0x10000e64       0x14 CMakeFiles/megacon_k_type_test.dir/C_/Users/hra/Documents/github/sangria_firmware/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
-                0x10000e64                time_us_64
+                0x10000e80       0x14 CMakeFiles/megacon_k_type_test.dir/C_/Users/hra/Documents/github/sangria_firmware/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x10000e80                time_us_64
  .text.busy_wait_until
-                0x10000e78       0x20 CMakeFiles/megacon_k_type_test.dir/C_/Users/hra/Documents/github/sangria_firmware/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
-                0x10000e78                busy_wait_until
+                0x10000e94       0x20 CMakeFiles/megacon_k_type_test.dir/C_/Users/hra/Documents/github/sangria_firmware/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x10000e94                busy_wait_until
  .text.hardware_alarm_set_callback
-                0x10000e98       0x8c CMakeFiles/megacon_k_type_test.dir/C_/Users/hra/Documents/github/sangria_firmware/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
-                0x10000e98                hardware_alarm_set_callback
+                0x10000eb4       0x8c CMakeFiles/megacon_k_type_test.dir/C_/Users/hra/Documents/github/sangria_firmware/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x10000eb4                hardware_alarm_set_callback
  .text.hardware_alarm_set_target
-                0x10000f24       0xe0 CMakeFiles/megacon_k_type_test.dir/C_/Users/hra/Documents/github/sangria_firmware/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
-                0x10000f24                hardware_alarm_set_target
+                0x10000f40       0xe0 CMakeFiles/megacon_k_type_test.dir/C_/Users/hra/Documents/github/sangria_firmware/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x10000f40                hardware_alarm_set_target
  .text.hardware_alarm_cancel
-                0x10001004       0x3c CMakeFiles/megacon_k_type_test.dir/C_/Users/hra/Documents/github/sangria_firmware/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
-                0x10001004                hardware_alarm_cancel
+                0x10001020       0x3c CMakeFiles/megacon_k_type_test.dir/C_/Users/hra/Documents/github/sangria_firmware/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x10001020                hardware_alarm_cancel
  .text.ph_merge_nodes
-                0x10001040       0x68 CMakeFiles/megacon_k_type_test.dir/C_/Users/hra/Documents/github/sangria_firmware/pico-sdk/src/common/pico_util/pheap.c.obj
+                0x1000105c       0x68 CMakeFiles/megacon_k_type_test.dir/C_/Users/hra/Documents/github/sangria_firmware/pico-sdk/src/common/pico_util/pheap.c.obj
  .text.ph_post_alloc_init
-                0x100010a8       0x3c CMakeFiles/megacon_k_type_test.dir/C_/Users/hra/Documents/github/sangria_firmware/pico-sdk/src/common/pico_util/pheap.c.obj
-                0x100010a8                ph_post_alloc_init
+                0x100010c4       0x3c CMakeFiles/megacon_k_type_test.dir/C_/Users/hra/Documents/github/sangria_firmware/pico-sdk/src/common/pico_util/pheap.c.obj
+                0x100010c4                ph_post_alloc_init
  .text.ph_merge_two_pass
-                0x100010e4       0x90 CMakeFiles/megacon_k_type_test.dir/C_/Users/hra/Documents/github/sangria_firmware/pico-sdk/src/common/pico_util/pheap.c.obj
-                0x100010e4                ph_merge_two_pass
+                0x10001100       0x90 CMakeFiles/megacon_k_type_test.dir/C_/Users/hra/Documents/github/sangria_firmware/pico-sdk/src/common/pico_util/pheap.c.obj
+                0x10001100                ph_merge_two_pass
  .text.ph_remove_any_head
-                0x10001174       0xf8 CMakeFiles/megacon_k_type_test.dir/C_/Users/hra/Documents/github/sangria_firmware/pico-sdk/src/common/pico_util/pheap.c.obj
+                0x10001190       0xf8 CMakeFiles/megacon_k_type_test.dir/C_/Users/hra/Documents/github/sangria_firmware/pico-sdk/src/common/pico_util/pheap.c.obj
  .text.ph_remove_head
-                0x1000126c       0xfc CMakeFiles/megacon_k_type_test.dir/C_/Users/hra/Documents/github/sangria_firmware/pico-sdk/src/common/pico_util/pheap.c.obj
-                0x1000126c                ph_remove_head
+                0x10001288       0xfc CMakeFiles/megacon_k_type_test.dir/C_/Users/hra/Documents/github/sangria_firmware/pico-sdk/src/common/pico_util/pheap.c.obj
+                0x10001288                ph_remove_head
  .text.ph_remove_and_free_node
-                0x10001368       0x7c CMakeFiles/megacon_k_type_test.dir/C_/Users/hra/Documents/github/sangria_firmware/pico-sdk/src/common/pico_util/pheap.c.obj
-                0x10001368                ph_remove_and_free_node
+                0x10001384       0x7c CMakeFiles/megacon_k_type_test.dir/C_/Users/hra/Documents/github/sangria_firmware/pico-sdk/src/common/pico_util/pheap.c.obj
+                0x10001384                ph_remove_and_free_node
  .text.mutex_init
-                0x100013e4       0x1c CMakeFiles/megacon_k_type_test.dir/C_/Users/hra/Documents/github/sangria_firmware/pico-sdk/src/common/pico_sync/mutex.c.obj
-                0x100013e4                mutex_init
- .text.recursive_mutex_init
                 0x10001400       0x1c CMakeFiles/megacon_k_type_test.dir/C_/Users/hra/Documents/github/sangria_firmware/pico-sdk/src/common/pico_sync/mutex.c.obj
-                0x10001400                recursive_mutex_init
+                0x10001400                mutex_init
+ .text.recursive_mutex_init
+                0x1000141c       0x1c CMakeFiles/megacon_k_type_test.dir/C_/Users/hra/Documents/github/sangria_firmware/pico-sdk/src/common/pico_sync/mutex.c.obj
+                0x1000141c                recursive_mutex_init
  .text.runtime_init
-                0x1000141c       0xf0 CMakeFiles/megacon_k_type_test.dir/C_/Users/hra/Documents/github/sangria_firmware/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
-                0x1000141c                runtime_init
- .text.exit     0x1000150c        0x4 CMakeFiles/megacon_k_type_test.dir/C_/Users/hra/Documents/github/sangria_firmware/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
-                0x1000150c                exit
- .text.panic    0x10001510       0x30 CMakeFiles/megacon_k_type_test.dir/C_/Users/hra/Documents/github/sangria_firmware/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
-                0x10001510                panic
+                0x10001438       0xf0 CMakeFiles/megacon_k_type_test.dir/C_/Users/hra/Documents/github/sangria_firmware/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+                0x10001438                runtime_init
+ .text.exit     0x10001528        0x4 CMakeFiles/megacon_k_type_test.dir/C_/Users/hra/Documents/github/sangria_firmware/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+                0x10001528                exit
+ .text.panic    0x1000152c       0x30 CMakeFiles/megacon_k_type_test.dir/C_/Users/hra/Documents/github/sangria_firmware/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+                0x1000152c                panic
  .text.hard_assertion_failure
-                0x10001540        0xc CMakeFiles/megacon_k_type_test.dir/C_/Users/hra/Documents/github/sangria_firmware/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
-                0x10001540                hard_assertion_failure
+                0x1000155c        0xc CMakeFiles/megacon_k_type_test.dir/C_/Users/hra/Documents/github/sangria_firmware/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+                0x1000155c                hard_assertion_failure
  .text.clocks_init
-                0x1000154c      0x2bc CMakeFiles/megacon_k_type_test.dir/C_/Users/hra/Documents/github/sangria_firmware/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
-                0x1000154c                clocks_init
+                0x10001568      0x2bc CMakeFiles/megacon_k_type_test.dir/C_/Users/hra/Documents/github/sangria_firmware/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
+                0x10001568                clocks_init
  .text.pll_init
-                0x10001808       0xb0 CMakeFiles/megacon_k_type_test.dir/C_/Users/hra/Documents/github/sangria_firmware/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
-                0x10001808                pll_init
+                0x10001824       0xb0 CMakeFiles/megacon_k_type_test.dir/C_/Users/hra/Documents/github/sangria_firmware/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
+                0x10001824                pll_init
  .text.watchdog_start_tick
-                0x100018b8       0x10 CMakeFiles/megacon_k_type_test.dir/C_/Users/hra/Documents/github/sangria_firmware/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
-                0x100018b8                watchdog_start_tick
+                0x100018d4       0x10 CMakeFiles/megacon_k_type_test.dir/C_/Users/hra/Documents/github/sangria_firmware/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
+                0x100018d4                watchdog_start_tick
  .text.xosc_init
-                0x100018c8       0x28 CMakeFiles/megacon_k_type_test.dir/C_/Users/hra/Documents/github/sangria_firmware/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
-                0x100018c8                xosc_init
+                0x100018e4       0x28 CMakeFiles/megacon_k_type_test.dir/C_/Users/hra/Documents/github/sangria_firmware/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
+                0x100018e4                xosc_init
  .text._out_char
-                0x100018f0       0x10 CMakeFiles/megacon_k_type_test.dir/C_/Users/hra/Documents/github/sangria_firmware/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+                0x1000190c       0x10 CMakeFiles/megacon_k_type_test.dir/C_/Users/hra/Documents/github/sangria_firmware/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
  .text.weak_raw_vprintf
-                0x10001900       0x30 CMakeFiles/megacon_k_type_test.dir/C_/Users/hra/Documents/github/sangria_firmware/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
-                0x10001900                weak_raw_vprintf
- .text          0x10001930       0x10 CMakeFiles/megacon_k_type_test.dir/C_/Users/hra/Documents/github/sangria_firmware/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
+                0x1000191c       0x30 CMakeFiles/megacon_k_type_test.dir/C_/Users/hra/Documents/github/sangria_firmware/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+                0x1000191c                weak_raw_vprintf
+ .text          0x1000194c       0x10 CMakeFiles/megacon_k_type_test.dir/C_/Users/hra/Documents/github/sangria_firmware/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
  .text.rom_func_lookup
-                0x10001940       0x10 CMakeFiles/megacon_k_type_test.dir/C_/Users/hra/Documents/github/sangria_firmware/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
-                0x10001940                rom_func_lookup
+                0x1000195c       0x10 CMakeFiles/megacon_k_type_test.dir/C_/Users/hra/Documents/github/sangria_firmware/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
+                0x1000195c                rom_func_lookup
  .text.rom_data_lookup
-                0x10001950       0x10 CMakeFiles/megacon_k_type_test.dir/C_/Users/hra/Documents/github/sangria_firmware/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
-                0x10001950                rom_data_lookup
+                0x1000196c       0x10 CMakeFiles/megacon_k_type_test.dir/C_/Users/hra/Documents/github/sangria_firmware/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
+                0x1000196c                rom_data_lookup
  .text.rom_funcs_lookup
-                0x10001960       0x44 CMakeFiles/megacon_k_type_test.dir/C_/Users/hra/Documents/github/sangria_firmware/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
-                0x10001960                rom_funcs_lookup
+                0x1000197c       0x44 CMakeFiles/megacon_k_type_test.dir/C_/Users/hra/Documents/github/sangria_firmware/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
+                0x1000197c                rom_funcs_lookup
  .text.__wrap___aeabi_uidiv
-                0x100019a4       0x4c CMakeFiles/megacon_k_type_test.dir/C_/Users/hra/Documents/github/sangria_firmware/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
-                0x100019a4                __wrap___aeabi_uidiv
-                0x100019a4                __wrap___aeabi_uidivmod
-                0x100019a4                div_u32u32
-                0x100019a4                divmod_u32u32
-                0x100019ac                divmod_u32u32_unsafe
-                0x100019d4                divmod_u32u32_savestate
+                0x100019c0       0x4c CMakeFiles/megacon_k_type_test.dir/C_/Users/hra/Documents/github/sangria_firmware/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
+                0x100019c0                __wrap___aeabi_uidiv
+                0x100019c0                __wrap___aeabi_uidivmod
+                0x100019c0                div_u32u32
+                0x100019c0                divmod_u32u32
+                0x100019c8                divmod_u32u32_unsafe
+                0x100019f0                divmod_u32u32_savestate
  .text.__aeabi_double_init
-                0x100019f0       0x94 CMakeFiles/megacon_k_type_test.dir/C_/Users/hra/Documents/github/sangria_firmware/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
-                0x100019f0                __aeabi_double_init
+                0x10001a0c       0x94 CMakeFiles/megacon_k_type_test.dir/C_/Users/hra/Documents/github/sangria_firmware/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
+                0x10001a0c                __aeabi_double_init
  .text.double_table_shim_on_use_helper
-                0x10001a84       0x2c CMakeFiles/megacon_k_type_test.dir/C_/Users/hra/Documents/github/sangria_firmware/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
-                0x10001a84                double_table_shim_on_use_helper
+                0x10001aa0       0x2c CMakeFiles/megacon_k_type_test.dir/C_/Users/hra/Documents/github/sangria_firmware/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
+                0x10001aa0                double_table_shim_on_use_helper
  .text.__aeabi_float_init
-                0x10001ab0       0x64 CMakeFiles/megacon_k_type_test.dir/C_/Users/hra/Documents/github/sangria_firmware/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
-                0x10001ab0                __aeabi_float_init
+                0x10001acc       0x64 CMakeFiles/megacon_k_type_test.dir/C_/Users/hra/Documents/github/sangria_firmware/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
+                0x10001acc                __aeabi_float_init
  .text.float_table_shim_on_use_helper
-                0x10001b14       0x2c CMakeFiles/megacon_k_type_test.dir/C_/Users/hra/Documents/github/sangria_firmware/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
-                0x10001b14                float_table_shim_on_use_helper
- .text          0x10001b40       0x10 CMakeFiles/megacon_k_type_test.dir/C_/Users/hra/Documents/github/sangria_firmware/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
-                0x10001b40                __aeabi_mem_init
- .text.memcpy   0x10001b50        0xc CMakeFiles/megacon_k_type_test.dir/C_/Users/hra/Documents/github/sangria_firmware/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
-                0x10001b50                __wrap_memcpy
-                0x10001b50                __wrap___aeabi_memcpy
+                0x10001b30       0x2c CMakeFiles/megacon_k_type_test.dir/C_/Users/hra/Documents/github/sangria_firmware/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
+                0x10001b30                float_table_shim_on_use_helper
+ .text          0x10001b5c       0x10 CMakeFiles/megacon_k_type_test.dir/C_/Users/hra/Documents/github/sangria_firmware/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
+                0x10001b5c                __aeabi_mem_init
+ .text.memcpy   0x10001b6c        0xc CMakeFiles/megacon_k_type_test.dir/C_/Users/hra/Documents/github/sangria_firmware/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
+                0x10001b6c                __wrap_memcpy
+                0x10001b6c                __wrap___aeabi_memcpy
  .text.stdio_out_chars_no_crlf
-                0x10001b5c       0x10 CMakeFiles/megacon_k_type_test.dir/C_/Users/hra/Documents/github/sangria_firmware/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x10001b78       0x10 CMakeFiles/megacon_k_type_test.dir/C_/Users/hra/Documents/github/sangria_firmware/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
  .text.stdio_out_chars_crlf
-                0x10001b6c       0xb4 CMakeFiles/megacon_k_type_test.dir/C_/Users/hra/Documents/github/sangria_firmware/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x10001b88       0xb4 CMakeFiles/megacon_k_type_test.dir/C_/Users/hra/Documents/github/sangria_firmware/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
  .text.stdio_put_string.isra.0
-                0x10001c20       0xfc CMakeFiles/megacon_k_type_test.dir/C_/Users/hra/Documents/github/sangria_firmware/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x10001c3c       0xfc CMakeFiles/megacon_k_type_test.dir/C_/Users/hra/Documents/github/sangria_firmware/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
  .text.__wrap_putchar
-                0x10001d1c       0xa0 CMakeFiles/megacon_k_type_test.dir/C_/Users/hra/Documents/github/sangria_firmware/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
-                0x10001d1c                __wrap_putchar
+                0x10001d38       0xa0 CMakeFiles/megacon_k_type_test.dir/C_/Users/hra/Documents/github/sangria_firmware/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x10001d38                __wrap_putchar
  .text.__wrap_puts
-                0x10001dbc       0x3c CMakeFiles/megacon_k_type_test.dir/C_/Users/hra/Documents/github/sangria_firmware/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
-                0x10001dbc                __wrap_puts
- .text.strlen   0x10001df8       0x5c c:/progra~2/gnu arm embedded toolchain/10 2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libc.a(lib_a-strlen-stub.o)
-                0x10001df8                strlen
+                0x10001dd8       0x3c CMakeFiles/megacon_k_type_test.dir/C_/Users/hra/Documents/github/sangria_firmware/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x10001dd8                __wrap_puts
+ .text.strlen   0x10001e14       0x5c c:/progra~2/gnu arm embedded toolchain/10 2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libc.a(lib_a-strlen-stub.o)
+                0x10001e14                strlen
  *(.fini)
- .fini          0x10001e54        0x4 c:/progra~2/gnu arm embedded toolchain/10 2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/thumb/v6-m/nofp/crti.o
-                0x10001e54                _fini
- .fini.__stub   0x10001e58       0x40 linker stubs
+ .fini          0x10001e70        0x4 c:/progra~2/gnu arm embedded toolchain/10 2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/thumb/v6-m/nofp/crti.o
+                0x10001e70                _fini
+ *fill*         0x10001e74        0x4 
+ .fini.__stub   0x10001e78       0x40 linker stubs
  *crtbegin.o(.ctors)
  *crtbegin?.o(.ctors)
  *(EXCLUDE_FILE(*crtend.o *crtend?.o) .ctors)
@@ -1504,82 +1505,82 @@ LOAD c:/progra~2/gnu arm embedded toolchain/10 2020-q4-major/bin/../lib/gcc/arm-
  *(SORT_BY_NAME(.dtors.*))
  *(.dtors)
  *(.eh_frame*)
- .eh_frame      0x10001e98        0x0 c:/progra~2/gnu arm embedded toolchain/10 2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/thumb/v6-m/nofp/crtbegin.o
-                0x10001e98                . = ALIGN (0x4)
+ .eh_frame      0x10001eb8        0x0 c:/progra~2/gnu arm embedded toolchain/10 2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/thumb/v6-m/nofp/crtbegin.o
+                0x10001eb8                . = ALIGN (0x4)
 
-.glue_7         0x10001e98        0x0
- .glue_7        0x10001e98        0x0 linker stubs
+.glue_7         0x10001eb8        0x0
+ .glue_7        0x10001eb8        0x0 linker stubs
 
-.glue_7t        0x10001e98        0x0
- .glue_7t       0x10001e98        0x0 linker stubs
+.glue_7t        0x10001eb8        0x0
+ .glue_7t       0x10001eb8        0x0 linker stubs
 
-.vfp11_veneer   0x10001e98        0x0
- .vfp11_veneer  0x10001e98        0x0 linker stubs
+.vfp11_veneer   0x10001eb8        0x0
+ .vfp11_veneer  0x10001eb8        0x0 linker stubs
 
-.v4_bx          0x10001e98        0x0
- .v4_bx         0x10001e98        0x0 linker stubs
+.v4_bx          0x10001eb8        0x0
+ .v4_bx         0x10001eb8        0x0 linker stubs
 
-.iplt           0x10001e98        0x0
- .iplt          0x10001e98        0x0 c:/progra~2/gnu arm embedded toolchain/10 2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/thumb/v6-m/nofp/crtbegin.o
+.iplt           0x10001eb8        0x0
+ .iplt          0x10001eb8        0x0 c:/progra~2/gnu arm embedded toolchain/10 2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/thumb/v6-m/nofp/crtbegin.o
 
-.rodata         0x10001e98       0xb4
+.rodata         0x10001eb8       0xb4
  *(EXCLUDE_FILE(*libm.a: *libc.a:*lib_a-mem*.o *libgcc.a:) .rodata*)
  .rodata.hardware_alarm_claim.str1.4
-                0x10001e98       0x22 CMakeFiles/megacon_k_type_test.dir/C_/Users/hra/Documents/github/sangria_firmware/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
- *fill*         0x10001eba        0x2 
+                0x10001eb8       0x22 CMakeFiles/megacon_k_type_test.dir/C_/Users/hra/Documents/github/sangria_firmware/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+ *fill*         0x10001eda        0x2 
  .rodata.panic.str1.4
-                0x10001ebc       0x12 CMakeFiles/megacon_k_type_test.dir/C_/Users/hra/Documents/github/sangria_firmware/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
- *fill*         0x10001ece        0x2 
+                0x10001edc       0x12 CMakeFiles/megacon_k_type_test.dir/C_/Users/hra/Documents/github/sangria_firmware/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+ *fill*         0x10001eee        0x2 
  .rodata.hard_assertion_failure.str1.4
-                0x10001ed0        0xc CMakeFiles/megacon_k_type_test.dir/C_/Users/hra/Documents/github/sangria_firmware/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+                0x10001ef0        0xc CMakeFiles/megacon_k_type_test.dir/C_/Users/hra/Documents/github/sangria_firmware/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
  .rodata.str1.4
-                0x10001edc       0x48 CMakeFiles/megacon_k_type_test.dir/C_/Users/hra/Documents/github/sangria_firmware/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x10001efc       0x48 CMakeFiles/megacon_k_type_test.dir/C_/Users/hra/Documents/github/sangria_firmware/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .rodata.__bi_44
-                0x10001f24        0xc CMakeFiles/megacon_k_type_test.dir/C_/Users/hra/Documents/github/sangria_firmware/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x10001f44        0xc CMakeFiles/megacon_k_type_test.dir/C_/Users/hra/Documents/github/sangria_firmware/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .rodata.__bi_75
-                0x10001f30        0xc CMakeFiles/megacon_k_type_test.dir/C_/Users/hra/Documents/github/sangria_firmware/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x10001f50        0xc CMakeFiles/megacon_k_type_test.dir/C_/Users/hra/Documents/github/sangria_firmware/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .rodata.__bi_81
-                0x10001f3c        0xc CMakeFiles/megacon_k_type_test.dir/C_/Users/hra/Documents/github/sangria_firmware/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x10001f5c        0xc CMakeFiles/megacon_k_type_test.dir/C_/Users/hra/Documents/github/sangria_firmware/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .rodata.crlf_str.0
-                0x10001f48        0x2 CMakeFiles/megacon_k_type_test.dir/C_/Users/hra/Documents/github/sangria_firmware/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
-                0x10001f4c                . = ALIGN (0x4)
- *fill*         0x10001f4a        0x2 
+                0x10001f68        0x2 CMakeFiles/megacon_k_type_test.dir/C_/Users/hra/Documents/github/sangria_firmware/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x10001f6c                . = ALIGN (0x4)
+ *fill*         0x10001f6a        0x2 
  *(SORT_BY_ALIGNMENT(SORT_BY_NAME(.flashdata*)))
-                0x10001f4c                . = ALIGN (0x4)
+                0x10001f6c                . = ALIGN (0x4)
 
-.rel.dyn        0x10001f4c        0x0
- .rel.iplt      0x10001f4c        0x0 c:/progra~2/gnu arm embedded toolchain/10 2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/thumb/v6-m/nofp/crtbegin.o
+.rel.dyn        0x10001f6c        0x0
+ .rel.iplt      0x10001f6c        0x0 c:/progra~2/gnu arm embedded toolchain/10 2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/thumb/v6-m/nofp/crtbegin.o
 
 .ARM.extab
  *(.ARM.extab* .gnu.linkonce.armextab.*)
-                0x10001f4c                __exidx_start = .
+                0x10001f6c                __exidx_start = .
 
 .ARM.exidx
  *(.ARM.exidx* .gnu.linkonce.armexidx.*)
-                0x10001f4c                __exidx_end = .
-                0x10001f4c                . = ALIGN (0x4)
-                0x10001f4c                __binary_info_start = .
+                0x10001f6c                __exidx_end = .
+                0x10001f6c                . = ALIGN (0x4)
+                0x10001f6c                __binary_info_start = .
 
-.binary_info    0x10001f4c       0x1c
+.binary_info    0x10001f6c       0x1c
  *(.binary_info.keep.*)
  .binary_info.keep.__bi_ptr22
-                0x10001f4c        0x4 CMakeFiles/megacon_k_type_test.dir/C_/Users/hra/Documents/github/sangria_firmware/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x10001f6c        0x4 CMakeFiles/megacon_k_type_test.dir/C_/Users/hra/Documents/github/sangria_firmware/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .binary_info.keep.__bi_ptr30
-                0x10001f50        0x4 CMakeFiles/megacon_k_type_test.dir/C_/Users/hra/Documents/github/sangria_firmware/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x10001f70        0x4 CMakeFiles/megacon_k_type_test.dir/C_/Users/hra/Documents/github/sangria_firmware/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .binary_info.keep.__bi_ptr38
-                0x10001f54        0x4 CMakeFiles/megacon_k_type_test.dir/C_/Users/hra/Documents/github/sangria_firmware/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x10001f74        0x4 CMakeFiles/megacon_k_type_test.dir/C_/Users/hra/Documents/github/sangria_firmware/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .binary_info.keep.__bi_ptr44
-                0x10001f58        0x4 CMakeFiles/megacon_k_type_test.dir/C_/Users/hra/Documents/github/sangria_firmware/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x10001f78        0x4 CMakeFiles/megacon_k_type_test.dir/C_/Users/hra/Documents/github/sangria_firmware/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .binary_info.keep.__bi_ptr50
-                0x10001f5c        0x4 CMakeFiles/megacon_k_type_test.dir/C_/Users/hra/Documents/github/sangria_firmware/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x10001f7c        0x4 CMakeFiles/megacon_k_type_test.dir/C_/Users/hra/Documents/github/sangria_firmware/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .binary_info.keep.__bi_ptr75
-                0x10001f60        0x4 CMakeFiles/megacon_k_type_test.dir/C_/Users/hra/Documents/github/sangria_firmware/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x10001f80        0x4 CMakeFiles/megacon_k_type_test.dir/C_/Users/hra/Documents/github/sangria_firmware/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .binary_info.keep.__bi_ptr81
-                0x10001f64        0x4 CMakeFiles/megacon_k_type_test.dir/C_/Users/hra/Documents/github/sangria_firmware/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x10001f84        0x4 CMakeFiles/megacon_k_type_test.dir/C_/Users/hra/Documents/github/sangria_firmware/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  *(.binary_info.*)
-                0x10001f68                __binary_info_end = .
-                0x10001f68                . = ALIGN (0x4)
-                0x10001f68                __etext = .
+                0x10001f88                __binary_info_end = .
+                0x10001f88                . = ALIGN (0x4)
+                0x10001f88                __etext = .
 
 .ram_vector_table
                 0x20000000       0xc0
@@ -1588,7 +1589,7 @@ LOAD c:/progra~2/gnu arm embedded toolchain/10 2020-q4-major/bin/../lib/gcc/arm-
                 0x20000000       0xc0 CMakeFiles/megacon_k_type_test.dir/C_/Users/hra/Documents/github/sangria_firmware/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
                 0x20000000                ram_vector_table
 
-.data           0x200000c0      0x16c load address 0x10001f68
+.data           0x200000c0      0x16c load address 0x10001f88
                 0x200000c0                __data_start__ = .
  *(vtable)
  *(.time_critical*)
@@ -1665,27 +1666,27 @@ LOAD c:/progra~2/gnu arm embedded toolchain/10 2020-q4-major/bin/../lib/gcc/arm-
                 0x2000022c                . = ALIGN (0x4)
                 0x2000022c                __data_end__ = .
 
-.igot.plt       0x2000022c        0x0 load address 0x100020d4
+.igot.plt       0x2000022c        0x0 load address 0x100020f4
  .igot.plt      0x2000022c        0x0 c:/progra~2/gnu arm embedded toolchain/10 2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/thumb/v6-m/nofp/crtbegin.o
 
 .uninitialized_data
-                0x2000022c        0x0 load address 0x100020d4
+                0x2000022c        0x0 load address 0x100020f4
                 0x2000022c                . = ALIGN (0x4)
  *(.uninitialized_data*)
 
-.scratch_x      0x20040000        0x0 load address 0x100020d4
+.scratch_x      0x20040000        0x0 load address 0x100020f4
                 0x20040000                __scratch_x_start__ = .
  *(.scratch_x.*)
                 0x20040000                . = ALIGN (0x4)
                 0x20040000                __scratch_x_end__ = .
-                0x100020d4                __scratch_x_source__ = LOADADDR (.scratch_x)
+                0x100020f4                __scratch_x_source__ = LOADADDR (.scratch_x)
 
-.scratch_y      0x20041000        0x0 load address 0x100020d4
+.scratch_y      0x20041000        0x0 load address 0x100020f4
                 0x20041000                __scratch_y_start__ = .
  *(.scratch_y.*)
                 0x20041000                . = ALIGN (0x4)
                 0x20041000                __scratch_y_end__ = .
-                0x100020d4                __scratch_y_source__ = LOADADDR (.scratch_y)
+                0x100020f4                __scratch_y_source__ = LOADADDR (.scratch_y)
 
 .bss            0x20000230      0x3cc
                 0x20000230                . = ALIGN (0x4)
@@ -1742,8 +1743,8 @@ LOAD c:/progra~2/gnu arm embedded toolchain/10 2020-q4-major/bin/../lib/gcc/arm-
  *(.stack*)
  .stack         0x20041000      0x800 CMakeFiles/megacon_k_type_test.dir/C_/Users/hra/Documents/github/sangria_firmware/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
 
-.flash_end      0x100020d4        0x0
-                0x100020d4                __flash_binary_end = .
+.flash_end      0x100020f4        0x0
+                0x100020f4                __flash_binary_end = .
                 0x20040000                __StackLimit = (ORIGIN (RAM) + LENGTH (RAM))
                 0x20041000                __StackOneTop = (ORIGIN (SCRATCH_X) + LENGTH (SCRATCH_X))
                 0x20042000                __StackTop = (ORIGIN (SCRATCH_Y) + LENGTH (SCRATCH_Y))
@@ -1798,7 +1799,7 @@ LOAD CMakeFiles/megacon_k_type_test.dir/C_/Users/hra/Documents/github/sangria_fi
 LOAD CMakeFiles/megacon_k_type_test.dir/C_/Users/hra/Documents/github/sangria_firmware/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
 LOAD CMakeFiles/megacon_k_type_test.dir/C_/Users/hra/Documents/github/sangria_firmware/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
 LOAD CMakeFiles/megacon_k_type_test.dir/C_/Users/hra/Documents/github/sangria_firmware/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
-LOAD C:\Users\hra\AppData\Local\Temp\ccEYYS7N.o
+LOAD C:\Users\hra\AppData\Local\Temp\cc02mSmk.o
 LOAD c:/progra~2/gnu arm embedded toolchain/10 2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libstdc++.a
 LOAD c:/progra~2/gnu arm embedded toolchain/10 2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libm.a
 START GROUP
@@ -1884,7 +1885,7 @@ LOAD linker stubs
  .ARM.attributes
                 0x0000051e       0x2c CMakeFiles/megacon_k_type_test.dir/C_/Users/hra/Documents/github/sangria_firmware/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
  .ARM.attributes
-                0x0000054a       0x22 C:\Users\hra\AppData\Local\Temp\ccEYYS7N.o
+                0x0000054a       0x22 C:\Users\hra\AppData\Local\Temp\cc02mSmk.o
  .ARM.attributes
                 0x0000056c       0x1e c:/progra~2/gnu arm embedded toolchain/10 2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/thumb/v6-m/nofp\libgcc.a(_dvmd_tls.o)
  .ARM.attributes
